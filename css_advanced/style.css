@@ -1,0 +1,407 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  color: white;
+}
+
+.logo img {
+  width: 167px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  margin-left: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #C271FF;
+}
+
+.main-img {
+  background-image: url("../html_advanced/img/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.main-section {
+  margin-top: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 1.1;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  word-spacing: 15px;
+  margin: 20px 0;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.hero-button {
+  margin-top: 25px;
+  border-radius: 50px;
+  height: 44px;
+  width: 162px;
+  background-color: #C271FF;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #a84ef0;
+}
+
+.pros {
+  width: 100%;
+  background-color: transparent;
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.section-title span {
+  color: #C271FF;
+  font-weight: 900;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  padding: 0 10%;
+}
+
+.features div {
+  text-align: center;
+  max-width: 180px;
+}
+
+.features img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.testimonial {
+  background-color: #C271FF;
+  color: white;
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.testimonial p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.tutorials {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.tutorials span {
+  color: #C271FF;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.cards > div {
+  width: 23%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.cards .thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 255 / 154;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cards .thumbnail img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cards .thumbnail::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 14px;
+  color: #C271FF;
+  background: rgba(255, 255, 255, 0.881);
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.cards h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.cards p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.cards div.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.cards div.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.cards div.meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cards div.meta img {
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+}
+
+.cards div.meta p {
+  margin-left: auto;
+  color: #C271FF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+.membership span {
+  color: #C271FF
+
+}
+
+.membership h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.perks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.perks img {
+  width: 44px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.perks h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.perks p {
+  font-size: 14px;
+}
+
+.membership button {
+  border-radius: 50px;
+  height: 44px;
+  width: 162px;
+  background-color: #C271FF;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.membership button:hover {
+  background-color: #a84ef0;
+}
+
+.faq {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.questions > div {
+  width: 45%;
+  text-align: left;
+}
+
+.questions h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.questions p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 10%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left img {
+  width: 160px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+
